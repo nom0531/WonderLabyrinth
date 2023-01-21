@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="system">
+      <UniqueIdentifier>{22dd8095-74f9-46df-81a1-36675a040b1f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="system\system.cpp">
+      <Filter>system</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="BackGround.cpp" />
+    <ClCompile Include="GameCamera.cpp" />
+    <ClCompile Include="Title.cpp" />
+    <ClCompile Include="NowLoading.cpp" />
+    <ClCompile Include="Stage.cpp" />
+    <ClCompile Include="StageSelect.cpp" />
+    <ClCompile Include="UI.cpp" />
+    <ClCompile Include="GameClear.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="Enemy2.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="Stage2.cpp" />
+    <ClCompile Include="Help.cpp" />
+    <ClCompile Include="Sum.cpp" />
+    <ClCompile Include="Num.cpp" />
+    <ClCompile Include="Chat.cpp" />
+    <ClCompile Include="BGM.cpp" />
+    <ClCompile Include="GameStop.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="system\system.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="BackGround.h" />
+    <ClInclude Include="GameCamera.h" />
+    <ClInclude Include="Title.h" />
+    <ClInclude Include="NowLoading.h" />
+    <ClInclude Include="Stage.h" />
+    <ClInclude Include="StageSelect.h" />
+    <ClInclude Include="UI.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="GameClear.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="Enemy2.h" />
+    <ClInclude Include="Stage2.h" />
+    <ClInclude Include="Help.h" />
+    <ClInclude Include="Sum.h" />
+    <ClInclude Include="Num.h" />
+    <ClInclude Include="Chat.h" />
+    <ClInclude Include="BGM.h" />
+    <ClInclude Include="GameStop.h" />
+  </ItemGroup>
+</Project>
