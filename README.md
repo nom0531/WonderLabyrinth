@@ -11,8 +11,7 @@
 <br>
 [3.技術説明](https://github.com/nom0531/WonderLabyrinth/blob/main/README.md#3%E6%8A%80%E8%A1%93%E8%AA%AC%E6%98%8E)
 <br>
-[4.こだわりポイント]
-()
+[4.こだわりポイント](https://github.com/nom0531/WonderLabyrinth/blob/main/README.md#4%E3%81%93%E3%81%A0%E3%82%8F%E3%82%8A%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88)
 <br>
 
 ## 1.作品概要
