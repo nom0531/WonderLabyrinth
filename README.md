@@ -94,17 +94,20 @@
 &emsp;対応するモデルを読み込むことでステージを組み立てています。 <br><br>
 ![図3](https://user-images.githubusercontent.com/122655553/213916588-924eff1b-a985-4ad6-9d30-c6653c6fba5d.png "実際に使用したステージのモデル") <br>
 &emsp;そのようにしてステージを作成しているため、 <br>
-&emsp;画像のようにあらかじめいくつかのステージを作成しておき、 <br>
-&emsp;プログラム内で乱数を出した後、対応するステージの情報に差し替えて出力する… <br>
-&emsp;という形でランダム生成を行っています。 <br>
 
-&emsp;処理の流れとしては以下のようになっております。<br>
-<summary>サンプルプログラム</summary>
+&emsp; 1.あらかじめいくつかのステージを作成。 <br>
+&emsp; 2.プログラムコード内で乱数を出し、Switch文で振り分ける。 <br>
+&emsp; 3.対応するステージの情報に差し替えて出力する。 <br>
+
+&emsp;・・・という形でランダム生成を行っています。 <br>
+&emsp;流れとしては以下のようになっております。<br>
 <details>
+	<summary>サンプルコード</summary>
 	<div>
 		~~~
 			int stageNum = 2;			// 2次元配列の行と列の値。
 
+			// 1.あらかじめいくつかのステージを作成。
 			// 元々のステージのデータ。
 			// 本作では配列内に格納している値でテクスチャを指定しています。
 			int stage[2][2] = {
@@ -126,9 +129,11 @@
 
 			int stageState = rand() % 2;		// 0~1 でランダムな値を返す。			
 
+			// 2.プログラムコード内で乱数を出し、Switch文で振り分ける。
 			// ステージ情報を代入する。
 			switch (stageState) {
 			case 0:
+				// 3.対応するステージの情報に差し替えて出力する。
 				for (int j = 0; j < stageNum; j++) {
 					for (int i = 0; i < stageNum; i++) {
 						stage[j][i] = stage_0[j][i];
@@ -136,7 +141,7 @@
 				}
 				break;
 			case 1:
-
+				// 3.対応するステージの情報に差し替えて出力する。
 				for (int j = 0; j < stageNum; j++) {
 					for (int i = 0; i < stageNum; i++) {
 						stage[j][i] = stage_1[j][i];
