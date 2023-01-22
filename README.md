@@ -32,7 +32,7 @@
 &emsp;学校内製エンジンを使用 <br>
 &emsp;※一部改造箇所あり。
 [3.技術説明](https://github.com/nom0531/WonderLabyrinth/blob/main/README.md#3%E6%8A%80%E8%A1%93%E8%AA%AC%E6%98%8E)
-の 会話するNPC にて後述しています。
+の◆◇ 会話するNPC ◇◆にて後述しています。
 
 [使用ツール] <br>
 &emsp;Visual Studio 2022 <br>
