@@ -5,14 +5,10 @@
 </lead>
 
 ## 目次
-[1.作品概要](https://github.com/nom0531/WonderLabyrinth/blob/main/README.md#1%E4%BD%9C%E5%93%81%E6%A6%82%E8%A6%81)
-<br>
-[2.操作説明](https://github.com/nom0531/WonderLabyrinth/blob/main/README.md#2%E6%93%8D%E4%BD%9C%E8%AA%AC%E6%98%8E)
-<br>
-[3.技術説明](https://github.com/nom0531/WonderLabyrinth/blob/main/README.md#3%E6%8A%80%E8%A1%93%E8%AA%AC%E6%98%8E)
-<br>
-[4.こだわりポイント](https://github.com/nom0531/WonderLabyrinth/blob/main/README.md#4%E3%81%93%E3%81%A0%E3%82%8F%E3%82%8A%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88)
-<br>
+[1.作品概要] <br>
+[2.操作説明] <br>
+[3.技術説明] <br>
+[4.こだわりポイント] <br>
 
 ## 1.作品概要
 ◆◇ 1.1作品紹介 ◇◆<br>
@@ -30,9 +26,7 @@
 
 [使用ゲームエンジン]<br>
 &emsp;学校内製エンジンを使用 <br>
-&emsp;※一部改造箇所あり。
-[3.技術説明](https://github.com/nom0531/WonderLabyrinth/blob/main/README.md#3%E6%8A%80%E8%A1%93%E8%AA%AC%E6%98%8E)
-の 3.1会話するNPC にて後述しています。
+&emsp;※一部改造箇所あり。[3.技術説明]の 3.1会話するNPC にて詳しく説明しています。
 
 [使用ツール] <br>
 &emsp;Visual Studio 2022 <br>
@@ -82,3 +76,9 @@
 ◆◇ 4.1誰にでも伝わるようなUI ◇◆<br>
 
 ◆◇ 4.2ステージのランダム生成とその見た目 ◇◆<br>
+
+
+[1.作品概要]:(https://github.com/nom0531/WonderLabyrinth/blob/main/README.md#1%E4%BD%9C%E5%93%81%E6%A6%82%E8%A6%81)
+[2.操作説明]:(https://github.com/nom0531/WonderLabyrinth/blob/main/README.md#2%E6%93%8D%E4%BD%9C%E8%AA%AC%E6%98%8E)
+[3.技術説明]:(https://github.com/nom0531/WonderLabyrinth/blob/main/README.md#3%E6%8A%80%E8%A1%93%E8%AA%AC%E6%98%8E)
+[4.こだわりポイント]:(https://github.com/nom0531/WonderLabyrinth/blob/main/README.md#4%E3%81%93%E3%81%A0%E3%82%8F%E3%82%8A%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88)
