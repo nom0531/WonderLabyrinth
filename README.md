@@ -8,7 +8,7 @@
 [1.作品概要](https://github.com/nom0531/WonderLabyrinth/blob/main/README.md#1%E4%BD%9C%E5%93%81%E6%A6%82%E8%A6%81)
 <br>
 [2.操作説明]
-(https://github.com/nom0531/WonderLabyrinth/edit/main/README.md#2%E6%93%8D%E4%BD%9C%E8%AA%AC%E6%98%8E)
+(https://github.com/nom0531/WonderLabyrinth/blob/main/README.md#2%E6%93%8D%E4%BD%9C%E8%AA%AC%E6%98%8E)
 <br>
 [3.技術説明](https://github.com/nom0531/WonderLabyrinth/blob/main/README.md#3%E6%8A%80%E8%A1%93%E8%AA%AC%E6%98%8E)
 <br>
