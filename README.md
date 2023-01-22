@@ -79,7 +79,7 @@
 &emsp;殆どのUIを丸みのあるデザインにしています。 <br><br>
 &emsp;ゲーム本編にて画面に表示されているアイコンは、 <br>
 &emsp;できる限り文字を使用せず、直感的に伝わるデザインを施しました。 <br>
-![image](https://user-images.githubusercontent.com/122655553/213916498-632df5ec-2178-495d-ab86-fc4e8d457401.png) <br>
+![image](https://user-images.githubusercontent.com/122655553/213916498-632df5ec-2178-495d-ab86-fc4e8d457401.png)
 ![image](https://user-images.githubusercontent.com/122655553/213916501-5eb41197-cb4c-4b68-b0d7-60199b983daa.png) <br>
 &emsp;それ以外にも、関連性を紐づけしやすくなるよう同じ色を使用する、<br>
 &emsp;体力は赤、アイテムは青…など、イメージしやすい色を使用する、などの工夫も行いました。<br>
