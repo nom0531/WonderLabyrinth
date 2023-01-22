@@ -13,7 +13,6 @@
 ## 1.作品概要
 ◆◇ 1.1作品紹介 ◇◆<br>
 
- [Wonder Labyrinth]　<br>
  [【作品紹介】Wonder Labyrinth](https://youtu.be/NlRZ1-RVJbg "https://youtu.be/NlRZ1-RVJbg")<br>
  
 &emsp; 三人称視点の1人用ターン制アクションゲームです。<br>
