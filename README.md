@@ -73,8 +73,15 @@
 ## 4.こだわりポイント
 
 ◆◇ 4.1誰にでも伝わるようなUI ◇◆<br>
+![image](https://user-images.githubusercontent.com/122655553/213916423-6576f885-0525-4e8d-9da6-fdbf708e1026.png) <br>
+&emsp;似通った色、フォントを使用することで、全体で統一感を持たせました。 <br><br>
+&emsp;また、作品を通して柔らかなイメージを持たせるために、 <br>
+&emsp;殆どのUIを丸みのあるデザインにしています。 <br><br>
+&emsp;ゲーム本編にて画面に表示されているアイコンは、 <br>
+&emsp;できる限り文字を使用せず、直感的に伝わるデザインを施しました。 <br>
 
 ◆◇ 4.2ステージのランダム生成とその見た目 ◇◆<br>
+
 
 
 [1.作品概要]:https://github.com/nom0531/WonderLabyrinth/blob/main/README.md#1%E4%BD%9C%E5%93%81%E6%A6%82%E8%A6%81
