@@ -102,7 +102,8 @@
 &emsp;・・・という形でランダム生成を行っています。 <br>
 &emsp;流れとしては以下のようになっております。<br>
 <details>
-	<summary>サンプルコード</summary>		
+	<summary>サンプルコード</summary><div>	
+	
 		~~~
 
 			int stageNum = 2;			// 2次元配列の行と列の値。
@@ -152,7 +153,8 @@
 			}
 
 		~~~
-</details>
+	
+</div></details>
 
 
 
