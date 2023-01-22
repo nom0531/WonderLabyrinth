@@ -104,6 +104,7 @@
 <details>
 	<summary>サンプルコード</summary><div>	
 	
+	
 		```
 			int stageNum = 2;			// 2次元配列の行と列の値。
 
