@@ -5,7 +5,7 @@
 </lead>
 
 ## 1.作品概要
-◆ 作品紹介 <br>
+◆◇ 作品紹介 ◇◆<br>
 
  [Wonder Labyrinth]　<br>
  [【作品紹介】Wonder Labyrinth](https://youtu.be/NlRZ1-RVJbg "https://youtu.be/NlRZ1-RVJbg")<br>
@@ -16,7 +16,7 @@
 &emsp; プレイヤーは名もなき冒険家となり、危険な迷宮に挑む最中に出会った妖精、<br>
 &emsp; 「アル」を相棒として、ともに迷宮の深部を目指します。<br>
 
-◆ 内部構成 <br>
+◆◇ 内部構成 ◇◆<br>
 
 [使用ゲームエンジン]<br>
 &emsp;学校内製エンジンを使用 <br>
@@ -46,7 +46,7 @@
 
 ![image](https://user-images.githubusercontent.com/122655553/213868336-da84f4b4-c8a9-49e5-82e5-40c7954bb47d.png)
 
-◆ ゲーム内操作 <br>
+◆◇ ゲーム内操作 ◇◆<br>
 
 &emsp;十字キー	   …	キャラクターの移動 <br>
 &emsp;Lスティック	…	カメラの移動 <br>
@@ -55,7 +55,7 @@
 &emsp;Bボタン	   	…	攻撃 <br>
 &emsp;STARTボタン	…	ヒントを聞く <br>
 
-◆ システム操作 (タイトルなど) <br>
+◆◇ システム操作 (タイトルなど) ◇◆<br>
 
 &emsp;十字キー	   …	ページ、選択項目の切り替え <br>
 &emsp;Aボタン	   	…	決定 <br>
