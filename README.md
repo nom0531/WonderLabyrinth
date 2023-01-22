@@ -15,7 +15,7 @@
 <br>
 
 ## 1.作品概要
-◆◇ 作品紹介 ◇◆<br>
+◆◇ 1.1作品紹介 ◇◆<br>
 
  [Wonder Labyrinth]　<br>
  [【作品紹介】Wonder Labyrinth](https://youtu.be/NlRZ1-RVJbg "https://youtu.be/NlRZ1-RVJbg")<br>
@@ -26,13 +26,13 @@
 &emsp; プレイヤーは名もなき冒険家となり、危険な迷宮に挑む最中に出会った妖精、<br>
 &emsp; 「アル」を相棒として、ともに迷宮の深部を目指します。<br>
 
-◆◇ 内部構成 ◇◆<br>
+◆◇ 1.2内部構成 ◇◆<br>
 
 [使用ゲームエンジン]<br>
 &emsp;学校内製エンジンを使用 <br>
 &emsp;※一部改造箇所あり。
 [3.技術説明](https://github.com/nom0531/WonderLabyrinth/blob/main/README.md#3%E6%8A%80%E8%A1%93%E8%AA%AC%E6%98%8E)
-の◆◇ 会話するNPC ◇◆にて後述しています。
+の 3.1会話するNPC にて後述しています。
 
 [使用ツール] <br>
 &emsp;Visual Studio 2022 <br>
@@ -56,7 +56,7 @@
 
 ![image](https://user-images.githubusercontent.com/122655553/213868336-da84f4b4-c8a9-49e5-82e5-40c7954bb47d.png)
 
-◆◇ 基本操作 ◇◆<br>
+◆◇ 2.1基本操作 ◇◆<br>
 
 [ゲーム内操作（ゲームプレイ時の主な操作）]
 &emsp;十字キー	   …	キャラクターの移動 <br>
@@ -73,12 +73,12 @@
 
 ## 3.技術説明
 
-◆◇ 会話するNPC ◇◆<br>
+◆◇ 3.1会話するNPC ◇◆<br>
 
-◆◇ エネミーの移動処理 ◇◆<br>
+◆◇ 3.2エネミーの移動処理 ◇◆<br>
 
 ## 4.こだわりポイント
 
-◆◇ 誰にでも伝わるようなUI ◇◆<br>
+◆◇ 4.1誰にでも伝わるようなUI ◇◆<br>
 
-◆◇ ステージのランダム生成 ◇◆<br>
+◆◇ 4.2ステージのランダム生成とその見た目 ◇◆<br>
