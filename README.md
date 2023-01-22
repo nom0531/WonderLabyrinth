@@ -11,7 +11,7 @@
 [4.こだわりポイント] <br>
 
 ## 1.作品概要
-◆◇ 1.1 作品紹介 ◇◆<br>
+◆◇ 1.1 **作品紹介** ◇◆<br>
 
  [【作品紹介】Wonder Labyrinth](https://youtu.be/NlRZ1-RVJbg "https://youtu.be/NlRZ1-RVJbg")<br>
  
