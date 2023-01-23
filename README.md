@@ -158,12 +158,11 @@
 ![図4.3.2](https://user-images.githubusercontent.com/122655553/213963495-45c104d4-72b3-4769-885f-b0bd7c0a3ad4.png "10層目のスクリーンショット") <br><br>
 &emsp;本作品ではゴールする（奥の赤いマスにたどり着く）度に、右上の階層数が1つずつ加算されていきます。 <br>
 &emsp;より階層を進んでいるように感じられるよう、階層数が「5層」増えるごとにステージのテクスチャが変更されるようにしています。 <br>
-![図4.3.3](https://user-images.githubusercontent.com/122655553/213963507-7cb18f85-abfc-4faa-87f7-a48615e09cbb.png "学校内製エンジンを使用したテクスチャ1")
-![図4.3.4](https://user-images.githubusercontent.com/122655553/213963512-e9ebb04e-fdd8-4fad-94da-82bc02298760.png "学校内製エンジンを使用したテクスチャ2") <br><br>
+![図4.3.3](https://user-images.githubusercontent.com/122655553/213963507-7cb18f85-abfc-4faa-87f7-a48615e09cbb.png "学校内製エンジンを使用したテクスチャ①")
+![図4.3.4](https://user-images.githubusercontent.com/122655553/213963512-e9ebb04e-fdd8-4fad-94da-82bc02298760.png "学校内製エンジンを使用したテクスチャ②") <br><br>
 &emsp;ステージそのもののテクスチャの他にも、背景や環境光なども変更しています。 <br><br>
-&emsp;特にテクスチャ②
-
-
+&emsp;特にテクスチャ②ではステージのイメージが「洞窟」ということで、" 探索している "というイメージを損なわないために、 <br>
+&emsp;また、プレイヤーが操作キャラクターを見失わないようにポイントライトを使用しています。 <br>
 
 [1.作品概要]:https://github.com/nom0531/WonderLabyrinth/blob/main/README.md#1%E4%BD%9C%E5%93%81%E6%A6%82%E8%A6%81
 [2.操作説明]:https://github.com/nom0531/WonderLabyrinth/blob/main/README.md#2%E6%93%8D%E4%BD%9C%E8%AA%AC%E6%98%8E
