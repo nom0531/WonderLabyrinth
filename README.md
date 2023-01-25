@@ -60,6 +60,73 @@
 ## 3.技術説明
 
 ◆◇ **3.1 会話するNPC** ◇◆<br>
+![図3.1.1](https://user-images.githubusercontent.com/122655553/214467041-15f1530a-3ec1-4871-8b7a-d134bcdc41a6.png "テキストの出力途中のスクリーンショット")
+![図3.1.2](https://user-images.githubusercontent.com/122655553/214469059-aac2ed1f-52b1-431d-8d04-03bc04e39518.png)　"最終的な出力状態") <br>
+
+&emsp;本作品ではエンジンを改造し、テキストが出力される仕様を作成しています。
+&emsp;出力は1文字ずつ出力され、出力が終わったかどうかを判定して次のテキストを表示します。
+
+&emsp;エンジン内のFontRender.cpp 及び FontRender.hを改造して作成しました。
+
+<details>
+	<summary>サンプルコード</summary><div>	
+		
+		// だんだん表示システム
+		wchar_t m_text_stock[256] = L"";	// 予備テキスト
+		float m_textOkuri_Interval = 0;		// テキスト送りのインターバルフレーム
+		float m_textOkuri_Timer = 0;		// テキスト送りタイマー
+		bool m_okuriFlag = false;		// メッセージ送り処理のフラグ
+		int m_textOkuri_Len = 0;		// 予備テキストの文字数
+		int m_textOkuri_NowLen = 0;		// 現在の文字数
+		---
+		// 表示するテキストを指定する
+		void FontRender::SetTextOkuri(const wchar_t* text, const float& Interval) 
+		{
+			m_textOkuri_Len = (int)wcslen(text);	// 文字数を取得
+			for (int n = 0; n < m_textOkuri_Len + 1; n++) {
+				m_text_stock[n] = text[n];
+			}
+
+			// 設定
+			m_textOkuri_Interval = Interval;
+			m_textOkuri_Timer = 0;
+			m_okuriFlag = true;
+			m_textOkuri_NowLen = -1;
+			m_textOkuriSE = TextOkuriSE_Flag;
+		}
+		
+		// 指定したテキストを表示する
+		bool FontRender::TextOkuriUpdate(const float addTime) 
+		{
+			// メッセージ送りフラグがtrueなら更新処理を行う
+			if (m_okuriFlag == true) {
+
+				m_textOkuri_Timer += addTime;
+				if (m_textOkuri_Interval <= m_textOkuri_Timer) {
+
+					// レッツ更新！
+					m_textOkuri_NowLen++;
+
+					// 移植
+					for (int n = 0; n < m_textOkuri_NowLen + 1; n++) {
+						m_text[n] = m_text_stock[n];
+					}	
+
+					// 後始末
+					m_textOkuri_Timer = 0.0f;
+					if (m_textOkuri_NowLen >= m_textOkuri_Len) {
+						m_okuriFlag = false;		// 終了
+					}
+
+					return true;
+				}
+
+				return false;
+			}
+
+		}
+		
+</div></details>
 
 ◆◇ **3.2 エネミーの移動処理** ◇◆<br>
 
@@ -67,6 +134,7 @@
 
 ![図3.2.1](https://user-images.githubusercontent.com/122655553/213916571-711b4e4a-fc53-4196-a1e8-3bcf3321fce4.png "一層目のステージ") <br>
 ![図3.2.2](https://user-images.githubusercontent.com/122655553/213916575-b57d40c3-cce9-426e-afe2-b2bc35a053a9.png "2層目のステージ") <br>
+
 &emsp;本作品のステージは、一部を除き、9×9のマスで構成されています。 <br><br>
 &emsp;マスと前述しました通り、ステージのモデルは一つに見えますが、 <br>
 &emsp;内部的には全く別のオブジェクトで構成されています。 <br><br>
@@ -139,23 +207,29 @@
 ◆◇ **4.1 誰にでも伝わるようなUI** ◇◆<br>
 
 ![図4.1.1](https://user-images.githubusercontent.com/122655553/213916423-6576f885-0525-4e8d-9da6-fdbf708e1026.png "ゲーム内で使用したUI一覧") <br>
+
 &emsp;似通った色、フォントを使用することで、全体で統一感を持たせました。 <br><br>
 &emsp;また、作品を通して柔らかなイメージを持たせるために、 <br>
 &emsp;殆どのUIを丸みのあるデザインにしています。 <br><br>
 &emsp;ゲーム本編にて画面に表示されているアイコンは、 <br>
 &emsp;できる限り文字を使用せず、直感的に伝わるデザインを施しました。 <br>
+
 ![図4.1.2](https://user-images.githubusercontent.com/122655553/213916498-632df5ec-2178-495d-ab86-fc4e8d457401.png "ゲーム内で使用したアイテムのゲージ")
 ![図4.1.3](https://user-images.githubusercontent.com/122655553/213916501-5eb41197-cb4c-4b68-b0d7-60199b983daa.png "ゲーム内で登場するアイテム") <br>
+
 &emsp;それ以外にも、関連性を紐づけしやすくなるよう同じ色を使用する、<br>
 &emsp;体力は赤、アイテムは青…など、イメージしやすい色を使用する、などの工夫も行いました。<br>
 
 ◆◇ **4.3 ステージのテクスチャ** ◇◆
 ![図4.3.1](https://user-images.githubusercontent.com/122655553/213963486-bad5e8da-445b-4671-9359-ae5cc04ddacb.png "1層目のスクリーンショット")
-![図4.3.2](https://user-images.githubusercontent.com/122655553/213963495-45c104d4-72b3-4769-885f-b0bd7c0a3ad4.png "10層目のスクリーンショット") <br><br>
+![図4.3.2](https://user-images.githubusercontent.com/122655553/213963495-45c104d4-72b3-4769-885f-b0bd7c0a3ad4.png "10層目のスクリーンショット") <br>
+
 &emsp;本作品ではゴールする（奥の赤いマスにたどり着く）度に、右上の階層数が1つずつ加算されていきます。 <br>
 &emsp;より階層を進んでいるように感じられるよう、階層数が「5層」増えるごとにステージのテクスチャが変更されるようにしています。 <br>
+
 ![図4.3.3](https://user-images.githubusercontent.com/122655553/213963507-7cb18f85-abfc-4faa-87f7-a48615e09cbb.png "学校内製エンジンを使用したテクスチャ①")
 ![図4.3.4](https://user-images.githubusercontent.com/122655553/213963512-e9ebb04e-fdd8-4fad-94da-82bc02298760.png "学校内製エンジンを使用したテクスチャ②") <br>
+
 &emsp;ステージそのもののテクスチャの他にも、背景や環境光なども変更しています。 <br><br>
 &emsp;特に後者のスクリーンショット（テクスチャ②）ではステージのイメージが「洞窟」ということで、 <br>
 &emsp;" 探索している "というイメージを損なわないために、 <br>
