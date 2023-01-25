@@ -309,6 +309,7 @@
 &emsp;体力は赤、アイテムは青…など、イメージしやすい色を使用する、などの工夫も行いました。<br>
 
 ◆◇ **4.2 ステージのテクスチャ** ◇◆
+
 ![図4.2.1](https://user-images.githubusercontent.com/122655553/213963486-bad5e8da-445b-4671-9359-ae5cc04ddacb.png "1層目のスクリーンショット")
 ![図4.3.2](https://user-images.githubusercontent.com/122655553/213963495-45c104d4-72b3-4769-885f-b0bd7c0a3ad4.png "10層目のスクリーンショット") <br>
 
