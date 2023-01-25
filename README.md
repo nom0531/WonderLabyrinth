@@ -73,7 +73,7 @@
 &emsp;1.&nbsp;表示したいテキストをクラス内の関数（関数名等はサンプルコードにて）で指定。
 &emsp;2.&nbsp;for文を回してテキストを予備の配列に格納。
 &emsp;3.&nbsp;テキストを表示する関数を呼び出し、出力できるようにする。
-&emsp;4.&nbsp;タイマーを基にして文字を１文字ずつ出力する。
+&emsp;4.&nbsp;指定した表示間隔とタイマーの現在値を比較して、文字を１文字ずつ出力する。
 
 <details>
 	<summary>サンプルコード</summary><div>	
@@ -86,62 +86,63 @@
 		int m_sendText_NowLen = 0;		// 現在の文字数
 		
 	
-		// 1.表示するテキストを指定する
+		// 1.表示するテキストを指定する。
 		void FontRender::SetSendText(const wchar_t* text, const float& Interval) 
 		{
-			// 2.予備テキストの文字数に設定したテキストの文字数を格納
+			// 2.予備テキストの文字数に設定したテキストの文字数を格納。
 			m_sendText_Len = (int)wcslen(text);	// 文字数を取得
-			// 文字数分for文を回す
+			// 文字数分for文を回す。
 			for (int n = 0; n < m_sendText_Len + 1; n++) {
-				// 予備テキスト内に指定したテキストの中身を代入する
+				// 予備テキスト内に指定したテキストの中身を代入する。
 				m_text_stock[n] = text[n];
 			}
 
 			// 設定
-			// クラス内の変数に引数の Interval を代入する
+			// クラス内の変数に引数の Interval を代入する。
 			m_sendText_Interval = Interval;
 			// タイマーをリセット
 			m_sendText_Timer = 0;
-			// メッセージ送りフラグを true にして出力できるようにする
+			// メッセージ送りフラグを true にして出力できるようにする。
 			m_sendFlag = true;
-			// 0 の時点で中身を出力してしまうので -1 で出力しないようにする
+			// 0 の時点で中身を出力してしまうので -1 で出力しないようにする。
 			m_sendText_NowLen = -1;
 		}
 		
-		// 3.指定したテキストを表示する
+		// 3.指定したテキストを表示する。
 		bool FontRender::SendTextUpdate(const float addTime) 
 		{
-			// メッセージ送りフラグが true なら更新処理を行う
+			// メッセージ送りフラグが true なら更新処理を行う。
 			if (m_sendText == true) {
+				// 4.指定した表示間隔とタイマーの現在値を比較して、文字を１文字ずつ出力する。
 				// fpsをタイマーに加算する
 				m_sendText_Timer += addTime;
 				// テキストを表示する間隔がタイマーの数値以下のとき
 				if (m_sendText_Interval <= m_sendText_Timer) {
 	
-					// NowLenの値を +1 し、次の文字を表示する
+					// NowLenの値を +1 し、次の文字を表示する。
 					m_sendText_NowLen++;
 
 					// 移植
-					// 現在のNowLen +1 回分for文を回す
+					// 現在のNowLen +1 回分for文を回す。
 					for (int n = 0; n < m_textSend_NowLen + 1; n++) {
 						// 予備テキストを代入
 						m_text[n] = m_text_stock[n];
 					}	
 
 					// 後始末
-					// タイマーをリセット
+					// タイマーをリセット。
 					m_sendText_Timer = 0.0f;
 					// 現在の文字数が予備テキストの文字数以上の時
 					if (m_sendText_NowLen >= m_sendText_Len) {
 						m_sendFlag = false;		// 終了
 					}
 	
-					// true を返す
+					// true を返す。
 					return true;
 				}
 
 				// テキストを表示する間隔がタイマーの数値以上のとき
-				// false を返す
+				// false を返す。
 				return false;
 			}
 		}
@@ -172,7 +173,7 @@
 	
 			int stageNum = 2;			// 2次元配列の行と列の値。
 
-			\\ 1. あらかじめいくつかのステージを作成。
+			// 1. あらかじめいくつかのステージを作成。
 			// 元々のステージのデータ。
 			// 本作では配列内に格納している値でテクスチャを指定しています。
 			int stage[2][2] = {
