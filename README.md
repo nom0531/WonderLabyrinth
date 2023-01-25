@@ -61,29 +61,35 @@
 
 ◆◇ **3.1 会話するNPC** ◇◆<br>
 ![図3.1.1](https://user-images.githubusercontent.com/122655553/214467041-15f1530a-3ec1-4871-8b7a-d134bcdc41a6.png "テキストの出力途中のスクリーンショット")
-![図3.1.2](https://user-images.githubusercontent.com/122655553/214469059-aac2ed1f-52b1-431d-8d04-03bc04e39518.png)　"最終的な出力状態") <br>
+![図3.1.2](https://user-images.githubusercontent.com/122655553/214469059-aac2ed1f-52b1-431d-8d04-03bc04e39518.png) "最終的な出力状態") <br>
 
-&emsp;本作品ではエンジンを改造し、テキストが出力される仕様を作成しています。
-&emsp;出力は1文字ずつ出力され、出力が終わったかどうかを判定して次のテキストを表示します。
+&emsp;本作品ではエンジンを改造し、テキストが出力される仕様を作成しています。 <br>
+&emsp;出力は1文字ずつ出力され、出力が終わったかどうかを判定して次のテキストを表示します。 <br>
 
-&emsp;エンジン内のFontRender.cpp 及び FontRender.hを改造して作成しました。
+&emsp;エンジン内のFontRender.cpp 及び FontRender.hを改造して作成しました。 <br>
+&emsp;※サンプルコード内の関数、及び処理の流れとは多少異なります。
+
+&emsp;テキストを出力する流れとしては以下の通りです。 <br>
+&emsp;1.&nbsp;表示したいテキストをクラス内の関数（関数名等はサンプルコードにて）で指定。
+&emsp;2.&nbsp;for文を回してテキストを予備の配列に格納。
+&emsp;3.&nbsp;テキストを表示する関数を呼び出し、出力できるようにする。
+&emsp;4.&nbsp;タイマーを基にして文字を１文字ずつ出力する。
 
 <details>
 	<summary>サンプルコード</summary><div>	
-		
-		// だんだん表示システム
+	
 		wchar_t m_text_stock[256] = L"";	// 予備テキスト
-		float m_sendText_Interval = 0;		// テキスト送りのインターバルフレーム
+		float m_sendText_Interval = 0;		// テキスト送りのインターバルフレーム(間隔)
 		float m_sendText_Timer = 0;		// テキスト送りタイマー
 		bool m_sendFlag = false;		// メッセージ送り処理のフラグ
-		int m_sendText_Len = 0;		// 予備テキストの文字数
+		int m_sendText_Len = 0;			// 予備テキストの文字数
 		int m_sendText_NowLen = 0;		// 現在の文字数
 		
 	
-		// 表示するテキストを指定する
+		// 1.表示するテキストを指定する
 		void FontRender::SetSendText(const wchar_t* text, const float& Interval) 
 		{
-			// 予備テキストの文字数に設定したテキストの文字数を格納
+			// 2.予備テキストの文字数に設定したテキストの文字数を格納
 			m_sendText_Len = (int)wcslen(text);	// 文字数を取得
 			// 文字数分for文を回す
 			for (int n = 0; n < m_sendText_Len + 1; n++) {
@@ -102,10 +108,10 @@
 			m_sendText_NowLen = -1;
 		}
 		
-		// 指定したテキストを表示する
+		// 3.指定したテキストを表示する
 		bool FontRender::SendTextUpdate(const float addTime) 
 		{
-			// メッセージ送りフラグがtrueなら更新処理を行う
+			// メッセージ送りフラグが true なら更新処理を行う
 			if (m_sendText == true) {
 				// fpsをタイマーに加算する
 				m_sendText_Timer += addTime;
@@ -138,7 +144,6 @@
 				// false を返す
 				return false;
 			}
-
 		}
 		
 </div></details>
