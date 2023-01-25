@@ -42,6 +42,7 @@
 ## 2.操作説明
 
 ◆◇ **2.1 基本操作** ◇◆<br>
+
 ![図2.1.1](https://user-images.githubusercontent.com/122655553/213868336-da84f4b4-c8a9-49e5-82e5-40c7954bb47d.png "操作説明") <br>
 
 [ゲーム内操作（ゲームプレイ時の主な操作）] <br>
@@ -60,6 +61,7 @@
 ## 3.技術説明
 
 ◆◇ **3.1 会話するNPC** ◇◆<br>
+
 ![図3.1.1](https://user-images.githubusercontent.com/122655553/214467041-15f1530a-3ec1-4871-8b7a-d134bcdc41a6.png "テキストの出力途中のスクリーンショット")
 ![図3.1.2](https://user-images.githubusercontent.com/122655553/214469059-aac2ed1f-52b1-431d-8d04-03bc04e39518.png "最終的な出力状態") <br>
 
@@ -86,10 +88,10 @@
 		int m_sendText_NowLen = 0;		// 現在の文字数
 		
 	
-		// 1.表示するテキストを指定する。
+		// 1. 表示するテキストを指定する。
 		void FontRender::SetSendText(const wchar_t* text, const float& Interval) 
 		{
-			// 2.予備テキストの文字数に設定したテキストの文字数を格納。
+			// 2. 予備テキストの文字数に設定したテキストの文字数を格納。
 			m_sendText_Len = (int)wcslen(text);	// 文字数を取得
 			// 文字数分for文を回す。
 			for (int n = 0; n < m_sendText_Len + 1; n++) {
@@ -108,12 +110,12 @@
 			m_sendText_NowLen = -1;
 		}
 		
-		// 3.指定したテキストを表示する。
+		// 3. 指定したテキストを表示する。
 		bool FontRender::SendTextUpdate(const float addTime) 
 		{
 			// メッセージ送りフラグが true なら更新処理を行う。
 			if (m_sendText == true) {
-				// 4.指定した表示間隔とタイマーの現在値を比較して、文字を１文字ずつ出力する。
+				// 4. 指定した表示間隔とタイマーの現在値を比較して、文字を１文字ずつ出力する。
 				// fpsをタイマーに加算する
 				m_sendText_Timer += addTime;
 				// テキストを表示する間隔がタイマーの数値以下のとき
@@ -150,6 +152,7 @@
 </div></details>
 
 ◆◇ **3.2 移動、当たり判定の処理** ◇◆<br>
+
 ![図3.2.1](https://user-images.githubusercontent.com/122655553/214481415-3d17fbd6-6223-49a2-8259-47cd7706783a.png "チュートリアルの盤面を上から見たスクリーンショット")
 
 &emsp;本作品の移動処理、当たり判定の処理は配列を用いて <br>
