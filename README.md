@@ -27,9 +27,9 @@
 &emsp;Adobe Photoshop 2022 <br>
 &emsp;FireAlpaca64 <br>
 
-[使用楽曲] <br>
-&emsp;[AudioStock 様](https://audiostock.jp/mypage/welcome/customer "https://audiostock.jp/mypage/welcome/customer") <br>
-&emsp;[DOVA-SYNDROME 様](https://dova-s.jp/ "https://dova-s.jp/") <br>
+[使用楽曲サイト元] <br>
+&emsp;[AudioStock](https://audiostock.jp/mypage/welcome/customer "https://audiostock.jp/mypage/welcome/customer")&nbsp;様 <br>
+&emsp;[DOVA-SYNDROME](https://dova-s.jp/ "https://dova-s.jp/")&nbsp;様 <br>
 
 [使用言語] <br>
 &emsp;C++ <br>
