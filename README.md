@@ -1,4 +1,7 @@
 # WonderLabyrinth
+
+![title](https://user-images.githubusercontent.com/122655553/215365409-57c3008e-424a-494b-a25b-933f7268f9f6.png)<br>
+
 <lead>
 河原学園電子ビジネス専門学校 <br>
 ゲームクリエイター科 1年 野村華生
@@ -41,7 +44,10 @@
 &emsp;1人 <br>
 
 [開発期間] <br>
-&emsp;2022/08～2022/12 <br><br>
+&emsp;2022/09～2022/1 <br>
+
+[備考] <br>
+&emsp;第11回ゲームコンペティション&nbsp;プレイアブル部門&nbsp;応募作品 <br><br>
 
 ## 2.操作説明
 
