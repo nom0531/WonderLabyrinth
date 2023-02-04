@@ -1,6 +1,6 @@
 # WonderLabyrinth
 
-![title](https://user-images.githubusercontent.com/122655553/215365409-57c3008e-424a-494b-a25b-933f7268f9f6.png)<br>
+![図1](https://user-images.githubusercontent.com/122655553/216737056-41b0fe0d-10a6-462c-be1a-41d8cadb5fb0.png "WonderLabyrinth タイトル画面")<br>
 
 <lead>
 河原学園電子ビジネス専門学校 <br>
