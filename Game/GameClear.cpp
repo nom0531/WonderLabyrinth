@@ -84,7 +84,7 @@ void GameClear::Font()
 	{
 		// STAGE
 		fontRender_stage.SetText(L"PASS STAGE");
-		fontRender_stage.SetPosition(-300.0f, 350.0f, 0.0f);
+		fontRender_stage.SetPosition(-300.0f, 320.0f, 0.0f);
 		fontRender_stage.SetScale(0.8f);
 		fontRender_stage.SetColor(g_vec4Black);
 
@@ -93,11 +93,11 @@ void GameClear::Font()
 		//åÖêîÇÃéwíË
 		swprintf_s(stage, 256, L"x %d", clearStage);
 		fontRender_Sumstage.SetText(stage);
-		fontRender_Sumstage.SetPosition(100.0f, 360.0f, 0.0f);
+		fontRender_Sumstage.SetPosition(100.0f, 330.0f, 0.0f);
 		fontRender_Sumstage.SetScale(1.0f);
 		fontRender_Sumstage.SetColor(g_vec4Black);
 
-		spriteRender_passStage.SetPosition({ 50.0f, 330.0f, 0.0f });
+		spriteRender_passStage.SetPosition({ 50.0f, 300.0f, 0.0f });
 		spriteRender_passStage.SetScale({ 0.5f, 0.5f,0.0f });
 	}
 
@@ -105,7 +105,7 @@ void GameClear::Font()
 	{
 		// Score
 		fontRender_item.SetText(L"GET ITEM");
-		fontRender_item.SetPosition(-300.0f, 240.0f, 0.0f);
+		fontRender_item.SetPosition(-300.0f, 210.0f, 0.0f);
 		fontRender_item.SetScale(0.8f);
 		fontRender_item.SetColor(g_vec4Black);
 
@@ -114,11 +114,11 @@ void GameClear::Font()
 		//åÖêîÇÃéwíË
 		swprintf_s(stage, 256, L"x %d", itemSum);
 		fontRender_Sumitem.SetText(stage);
-		fontRender_Sumitem.SetPosition(100.0f, 250.0f, 0.0f);
+		fontRender_Sumitem.SetPosition(100.0f, 220.0f, 0.0f);
 		fontRender_Sumitem.SetScale(1.0f);
 		fontRender_Sumitem.SetColor(g_vec4Black);
 
-		spriteRender_itemGet.SetPosition({ 50.0f, 220.0f, 0.0f });
+		spriteRender_itemGet.SetPosition({ 50.0f, 200.0f, 0.0f });
 		spriteRender_itemGet.SetScale({ 0.5f, 0.5f,0.0f });
 	}
 
@@ -126,7 +126,7 @@ void GameClear::Font()
 	{
 		// Score
 		fontRender_hp.SetText(L"SAVED HP");
-		fontRender_hp.SetPosition(-300.0f, 140.0f, 0.0f);
+		fontRender_hp.SetPosition(-300.0f, 110.0f, 0.0f);
 		fontRender_hp.SetScale(0.8f);
 		fontRender_hp.SetColor(g_vec4Black);
 
@@ -135,11 +135,11 @@ void GameClear::Font()
 		//åÖêîÇÃéwíË
 		swprintf_s(stage, 256, L"x %d", HP);
 		fontRender_Sumhp.SetText(stage);
-		fontRender_Sumhp.SetPosition(100.0f, 150.0f, 0.0f);
+		fontRender_Sumhp.SetPosition(100.0f, 120.0f, 0.0f);
 		fontRender_Sumhp.SetScale(1.0f);
 		fontRender_Sumhp.SetColor(g_vec4Black);
 
-		spriteRender_hpSaved.SetPosition({ 50.0f, 120.0f, 0.0f });
+		spriteRender_hpSaved.SetPosition({ 50.0f, 100.0f, 0.0f });
 		spriteRender_hpSaved.SetScale({ 0.5f, 0.5f,0.0f });
 	}
 
