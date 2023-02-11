@@ -229,7 +229,7 @@
 
 			// 動こうとした方向（今回は上方向）に動けるとき。
 			if (IsMove(move) == true) {
-				// 
+				// 上方向の情報に移動速度を加算。
 				position.z += moveSpeed;
 				// ステージのマス数分for文を回す。
 				for (int i = 0; i < num->stageNum; i++) {
@@ -240,7 +240,7 @@
 
 							// 3. 移動したので元々入っていた配列の中身を0にする。
 							position_stage[i][j] = 0;
-							// 移動する方向に 1 を代入する。
+							// 移動した方向に 1 を代入する。
 							position_stage[i - 1][j] = 1;
 							// 2D座標（二次元配列）の値を移動後の値にする。
 							position2D.y -= 1.0f;
@@ -378,6 +378,9 @@
 &emsp;テクスチャ②ではステージのイメージが「洞窟」ということで、" 探索している "という印象を持たせるため、 <br>
 &emsp;また、プレイヤーが操作キャラクターを見失わないようにするためにポイントライトを使用しています。 <br>
 
+[目次へ戻る]
+
+[目次へ戻る]:https://github.com/nom0531/WonderLabyrinth#%E7%9B%AE%E6%AC%A1-
 [1.作品概要]:https://github.com/nom0531/WonderLabyrinth/blob/main/README.md#1%E4%BD%9C%E5%93%81%E6%A6%82%E8%A6%81
 [2.操作説明]:https://github.com/nom0531/WonderLabyrinth/blob/main/README.md#2%E6%93%8D%E4%BD%9C%E8%AA%AC%E6%98%8E
 [3.技術説明]:https://github.com/nom0531/WonderLabyrinth/blob/main/README.md#3%E6%8A%80%E8%A1%93%E8%AA%AC%E6%98%8E
