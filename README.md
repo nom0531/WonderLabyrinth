@@ -70,6 +70,11 @@
 [開発期間] <br>
 &emsp;2022/09～2022/01 <br>
 
+[対応コントローラー]<br>
+&emsp;Logitech Gamepad F310 <br>
+&emsp;Microsoft Windows11 キーボード
+
+
 [備考] <br>
 &emsp;第11回ゲームコンペティション&nbsp;プレイアブル部門&nbsp;応募作品 <br><br>
 
