@@ -8,16 +8,21 @@
 ![図1](https://user-images.githubusercontent.com/122655553/216737056-41b0fe0d-10a6-462c-be1a-41d8cadb5fb0.png "WonderLabyrinth タイトル画面")<br>
 
 ## 自己紹介
-プロフィール<br>
-&emsp;2003年5月31日生まれ。<br>
-&emsp;趣味はイラストや写真、ゲーム等。
 
-検定取得状況 ※<br>
+---
+
+[プロフィール]<br>
+&emsp;2003年5月31日生まれ。<br>
+&emsp;趣味はイラストや写真撮影、ゲーム等。
+
+[検定取得状況] ※<br>
+&emsp;情報処理技術者能力認定試験 3級<br>
 &emsp;C言語プログラミング能力認定試験 3級<br>
 &emsp;Photoshop®クリエイター能力認定試験 スタンダード<br>
-&emsp;(※2023年2月現在)
+&emsp;(※2023年2月現在の獲得状況です。)<br><br>
 
 ## 目次 <br>
+---
 [1.作品概要] <br>
 &emsp;1.1 作品紹介<br>
 &emsp;1.2 内部構成<br><br>
@@ -32,6 +37,7 @@
 &emsp;4.2 ステージのテクスチャ<br><br>
 
 ## 1.作品概要
+---
 ◆◇ **1.1 作品紹介** ◇◆<br>
 
  [【作品紹介】Wonder Labyrinth](https://youtu.be/NlRZ1-RVJbg "https://youtu.be/NlRZ1-RVJbg")<br>
@@ -79,7 +85,7 @@
 &emsp;第11回ゲームコンペティション&nbsp;プレイアブル部門&nbsp;応募作品 <br><br>
 
 ## 2.操作説明
-
+---
 ◆◇ **2.1 基本操作** ◇◆<br>
 
 ![図2.1.1](https://user-images.githubusercontent.com/122655553/213868336-da84f4b4-c8a9-49e5-82e5-40c7954bb47d.png "操作説明")<br><br>
@@ -98,7 +104,7 @@
 &emsp;Bボタン　　　…　キャンセル <br><br>
 
 ## 3.技術説明
-
+---
 ◆◇ **3.1 会話するNPC** ◇◆<br>
 
 ![図3.1.1](https://user-images.githubusercontent.com/122655553/214467041-15f1530a-3ec1-4871-8b7a-d134bcdc41a6.png "テキストの出力途中のスクリーンショット")
@@ -349,7 +355,7 @@
 &emsp;詳しくは [4.ゲーム内のこだわり]の "**4.2 ステージのテクスチャ**" にて詳しく触れています。 <br><br>
 
 ## 4.ゲーム内のこだわり
-
+---
 ◆◇ **4.1 誰にでも伝わるようなUI** ◇◆<br>
 
 ![図4.1.1](https://user-images.githubusercontent.com/122655553/213916423-6576f885-0525-4e8d-9da6-fdbf708e1026.png "ゲーム内で使用したUI一覧") <br><br>
